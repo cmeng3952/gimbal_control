@@ -1,0 +1,17 @@
+<!-- ROS 1 launch retained for reference. ROS 2 uses gimbal_control.launch.py -->
+<launch>
+  <node pkg="gimbal_control" type="gimbal_control_node" name="gimbal_control_node" output="screen">
+    <param name="target_ip" value="192.168.144.108"/>
+    <param name="target_port" value="2337"/>
+    <param name="local_ip" value="192.168.144.111"/>
+    <param name="local_port" value="2338"/>
+
+    <param name="mqtt_broker" value="tcp://47.104.183.127:1983"/>
+    <param name="mqtt_user" value="pxtest"/>
+    <param name="mqtt_password" value="test2025@px"/>
+    <param name="mqtt_sub_topic" value="uavcontrol/gimbal/command/uav1"/>
+    <param name="mqtt_pub_topic" value="uavcontrol/gimbal/state/uav1"/>
+  </node>
+</launch>
+
+

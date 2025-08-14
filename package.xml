@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>gimbal_control</name>
+  <version>0.1.0</version>
+  <description>Standalone gimbal control package (ROS 2 Humble compatible)</description>
+
+  <maintainer email="cmeng3952@gmail.com">UAV Team</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>rclcpp</depend>
+  <!-- System/third-party deps via rosdep -->
+  <depend>nlohmann_json3_dev</depend>
+  <depend>libpaho-mqttpp-dev</depend>
+  <depend>libpaho-mqtt-dev</depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
+
+
